@@ -1,7 +1,7 @@
 # FMU Ports to AASX 
 
-This simple Python script allows to add ports from an `.fmu` file to 
-an existing `AASX` package at the correct `SimulationModel` submodel. 
+This simple Python script generates an `.aasx` file with the ports from an `.fmu` file to in order to make creating a
+correct `SimulationModel` submodel easier. 
 
 
 ## Installation

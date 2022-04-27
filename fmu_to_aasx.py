@@ -83,18 +83,18 @@ def fmu_scalar_variable_to_ports_connector_smc(
     :return:
     """
     smc = model.SubmodelElementCollectionOrdered(id_short=id_short)
-    smc.value.add(model.Property(id_short="name", value_type=model.datatypes.String, value=variable.name))
-    smc.value.add(model.Property(id_short="description", value_type=model.datatypes.String, value=variable.description))
+    smc.value.add(model.Property(id_short="portConName", value_type=model.datatypes.String, value=variable.name))
+    smc.value.add(model.Property(id_short="portConDescription", value_type=model.datatypes.String, value=variable.description))
     smc.value.add(model.Property(id_short="unit", value_type=model.datatypes.String, value=variable.unit))
 
-    variable_smc = model.SubmodelElementCollectionOrdered(id_short="variable")
-    variable_smc.value.add(model.Property(id_short="name",
+    variable_smc = model.SubmodelElementCollectionOrdered(id_short="variable01")
+    variable_smc.value.add(model.Property(id_short="variableName",
                                           value_type=model.datatypes.String,
                                           value=variable.name))
-    variable_smc.value.add(model.Property(id_short="description",
+    variable_smc.value.add(model.Property(id_short="variableDescription",
                                           value_type=model.datatypes.String,
                                           value=variable.description))
-    variable_smc.value.add(model.Property(id_short="unit",
+    variable_smc.value.add(model.Property(id_short="unitDescription",
                                           value_type=model.datatypes.String,
                                           value=variable.unit))
     variable_smc.value.add(model.Property(id_short="type",

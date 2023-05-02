@@ -1,7 +1,11 @@
 # FMU Ports to AASX 
 
 This simple Python script generates an `.aasx` file with the ports from an `.fmu` file to in order to make creating a
-correct `SimulationModel` submodel easier. 
+`SimulationModel` submodel easier. 
+
+Please note, that this is not compliant to the standardized [Provision of Simulation Models](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Provision%20of%20Simulation%20Models/1/0) 
+submodel, since this script was created before this model was officialy released. 
+It should only be used as reference to as how such a generation can be automated..
 
 
 ## Installation
